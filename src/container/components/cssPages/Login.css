@@ -1,0 +1,108 @@
+.login_banner {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../../images/login-banner.jpg");
+}
+.login_banner::after {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.login {
+  display: flex;
+  z-index: 2;
+  min-height: 70vh;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.login h1 {
+  color: #fff;
+  font-weight: 600;
+  font-size: 35px;
+  margin-top: 50px;
+}
+.login_form {
+  width: 320px;
+  text-align: center;
+  padding: 25px 0px;
+  margin: 30px 0px 0px 0px;
+  border: 2px solid #fff;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+.form_control{
+  height: 80px;
+
+}
+form label {
+  color: #fff;
+  margin: 0px;
+  display: block;
+  font-size: 16px;
+  margin-top: 10px;
+  font-family: "Montserrat", sans-serif;
+}
+form input {
+  color: #fff;
+  width: 220px;
+  background: transparent;
+  margin: 10px 0px 0px 0px;
+  border: 1px solid #fff;
+}
+input:focus {
+  outline: none;
+}
+.errors{
+  color: #FB1828;
+  font-weight: 600;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+}
+
+.submit_btn {
+  color: #fff;
+  margin-top: 30px;
+  padding: 6px 80px;
+  background-color: #000;
+  font-family: "Montserrat", sans-serif;
+}
+.logout_btn {
+  color: #fff;
+  margin-top: 40px;
+  padding: 6px 60px;
+  background-color: #000;
+  font-family: "Montserrat", sans-serif;
+}
+.user_name {
+  color: tomato;
+}
+.logout_banner {
+  width: 100%;
+  height: 100vh;
+  background-color: #f8f9fa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 800px) {
+  .login_form {
+    width: 80%;
+    padding: 15px 0px;
+  }
+
+}
+@media screen and (max-width: 600px) {
+  .login_form {
+    width: 80%;
+    padding: 15px 0px;
+  }
+}

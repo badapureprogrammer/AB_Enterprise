@@ -1,0 +1,138 @@
+.team_banner {
+  width: 100%;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../../images/teambanner_one.jpg");
+}
+.team_banner::before {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  /* z-index: 0; */
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.speaking {
+  color: #ff6600;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.overlay {
+  opacity: 0;
+  position: absolute;
+  background-color: #ff6600;
+  transition: all 0.4s ease-out;
+}
+
+.data_person {
+  width: 290px;
+  height: 380px;
+  margin: 20px;
+  z-index: 2;
+  position: relative;
+  text-align: center;
+  box-sizing: border-box;
+  border: 2px solid #bdbbbb;
+  background-color: #f8f9fa;
+  transition: all 0.4s ease;
+}
+
+.head {
+  color: #000;
+  font-weight: 600;
+  font-size: 2.25rem;
+  text-align: center;
+  padding: 60px 0px 20px 0px;
+  margin: 0px 0px 0px 0px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.first {
+  height: 280px;
+  width: 256px;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  padding: 0px 0px 0px 0px;
+}
+
+.first img {
+  width: 256px;
+  height: 270px;
+  margin: 20px 0px 0px 0px;
+}
+
+.first:hover .overlay {
+  opacity: 0.9;
+}
+
+.iconlist {
+  top: 50%;
+  left: 50%;
+  height: 100%;
+  font-size: 20px;
+  color: #fff;
+  position: absolute;
+  margin: 70px 0px 0px 0px;
+  transform: translate(-50%, -50%);
+}
+
+.overlaybottom {
+  left: 0;
+  height: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.first:hover .overlaybottom {
+  height: 93%;
+}
+
+.ftli {
+  font-weight: 400;
+  font-size: 30px;
+  text-align: center;
+  clear: #fff;
+  border: 2px solid #fff;
+  padding: 8px 8px 8px 8px;
+  margin: 5px 5px 5px 5px;
+}
+
+.ftli:hover {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.ftli {
+  text-align: center;
+  border: 2px solid #fff;
+  padding: 8px 8px 8px 8px;
+  margin: 5px 5px 5px 5px;
+}
+
+.ftli:hover {
+  color: #000000;
+  background-color: #ffffff;
+}
+.h_name {
+  color: #222222;
+  font-size: 22px;
+  margin: 10px 0px 10px 0px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.h_name:hover {
+  color: #ff6600;
+}
+.h_post {
+  color: #222222;
+  font-family: "Roboto", sans-serif;
+  margin: 0px 0px 20px 0px;
+}
